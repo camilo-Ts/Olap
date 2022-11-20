@@ -1,0 +1,240 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f3bc0f6-8007-4325-bb29-457e010ad438" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM EMPLEADO</ID>
+  <Name>DIM EMPLEADO</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="88f427ed-2ce7-4649-8e65-eeae010b356e">
+    <DataSourceViewID>DESKTOP-FO8HSMK</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="b7e8c367-085e-423f-b0c6-deaba879845d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9c4f876f-4a81-470f-a9e1-243ace6ed7ec">
+      <ID>Id Empleado</ID>
+      <Name>Id Empleado</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95c144ee-52a2-4bfa-b89d-3f7a1069f51c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae9c3080-0969-4eaf-ba4f-e66d109d9020">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>id_empleado</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8e4af280-5828-4c75-b47b-9256f4855471">
+          <AttributeID>Nombre</AttributeID>
+          <Name>Nombre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ab4591d1-6ffa-46b4-a6ce-3bdf5713a5cb">
+          <AttributeID>Appaterno</AttributeID>
+          <Name>Appaterno</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3bb239a-26bc-4d3c-9c03-ff869678b4bf">
+          <AttributeID>Appmaterno</AttributeID>
+          <Name>Appmaterno</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d2c5021-ca45-4332-90d2-8344ef05faf4">
+          <AttributeID>Dia Contrato</AttributeID>
+          <Name>Dia Contrato</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="58be20b4-ec08-4917-9013-456cfee83440">
+          <AttributeID>Mes Contrato</AttributeID>
+          <Name>Mes Contrato</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be102388-a50c-4d8c-8e90-9938aa16a573">
+          <AttributeID>Anio Contrato</AttributeID>
+          <Name>Anio Contrato</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="756fac83-68ee-4c88-98c5-6a1d9d400c11">
+          <AttributeID>Sueldo Base</AttributeID>
+          <Name>Sueldo Base</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c10ab066-d2ce-4c99-87f5-dacc976818a0">
+          <AttributeID>Cargo</AttributeID>
+          <Name>Cargo</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88d1949f-2ab0-4b2c-887b-4f5464e6b796">
+      <ID>Nombre</ID>
+      <Name>Nombre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d169f9d-4ec1-41d8-ba84-c912c08c6ede">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5eb89553-3f0b-4188-b8e0-4329947b5853">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>nombre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="937d9cbf-17aa-4b39-942e-4e2921e4f404">
+      <ID>Appaterno</ID>
+      <Name>Appaterno</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05f178da-5b85-476a-8832-c1b6a57ce8ec">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4479017e-df20-4239-957d-2d753a4951dd">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>appaterno</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="96a89878-73b4-488b-8afe-f5a0d1b50194">
+      <ID>Appmaterno</ID>
+      <Name>Appmaterno</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02415d51-eaa2-46ac-8586-8819c6809b84">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad0776f8-bbf5-4194-8261-f0e92f9deffc">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>appmaterno</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ecc4bae-4c50-4460-9b14-ba09adada10d">
+      <ID>Dia Contrato</ID>
+      <Name>Dia Contrato</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ffde667-584e-4f7e-a7b7-a6e8c2088272">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56aca992-27c4-4111-a5a4-d4f27b41ce6c">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>dia_contrato</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="04cec41f-5023-4d07-84e2-af77e6f51845">
+      <ID>Mes Contrato</ID>
+      <Name>Mes Contrato</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b83441e6-6013-4e63-b8c9-7283fa57cea1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf495793-2a99-4a36-901e-6072fa37a905">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>mes_contrato</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abb686d4-072a-4561-a29c-4660f0e6f12c">
+      <ID>Anio Contrato</ID>
+      <Name>Anio Contrato</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b80a79af-5643-4b83-91b1-b6f7204291ed">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c81d82c-3f98-410a-83f6-13d4b394ad8d">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>anio_contrato</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ea400975-ec77-47b4-bff2-f1272b1d13d7">
+      <ID>Sueldo Base</ID>
+      <Name>Sueldo Base</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be06dedf-e290-432a-bd5f-7689b94a6246">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b047f41a-57e1-406c-8a92-961669638095">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>sueldo_base</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e92ef7e-25af-4e1a-b323-09269195ba02">
+      <ID>Cargo</ID>
+      <Name>Cargo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c85f33b6-f166-43c7-a81c-22be2f9dad38">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ded3322-24e3-463f-a566-16c554e27b8b">
+            <TableID>dbo_DIM_EMPLEADO</TableID>
+            <ColumnID>cargo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
